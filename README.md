@@ -1,2 +1,2 @@
 # Instagram_MainPage
-In this project, a user interface similar to Instagram's homepage has been created using Bootstrap. 
+In this project, a user interface similar to Instagram's homepage has been created using Bootstrap.  A modern and aesthetic look is achieved with a user-friendly design. The project is developed in accordance with responsive design principles, providing a seamless user experience across different screen sizes. Customized styles with CSS of the page. This project serves as a great example for those looking to showcase their web development skills and gain experience working with Bootstrap. You can check out the repository on GitHub to explore the details and get inspired to develop your project further.
