@@ -1,0 +1,10 @@
+.icon-container {
+    display: flex;
+    align-items: center; /* Dikeyde hizalama */
+    gap: 5px; /* Aradaki boşluğu belirler */
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Instagram</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light border fixed-top">
+        <img style="height: 40px;" src="images/Instagram_logo.svg" alt="">
+        <form class="form-inline mr-5">
+          <input  class="form-control mr-sm-2" type="search" placeholder="Ara" aria-label="Search">
+        </form>
+        <div class="icon-container">
+            <svg class="icon mr-3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+                <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+            </svg>    
+        
+            <svg class="icon mr-3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-messenger" viewBox="0 0 16 16">
+                <path d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.64.64 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.64.64 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76m5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z"/>
+            </svg>  
+            
+            <svg class="icon mr-3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-browser-safari" viewBox="0 0 16 16">
+                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.25-14.75v1.5a.25.25 0 0 1-.5 0v-1.5a.25.25 0 0 1 .5 0m0 12v1.5a.25.25 0 1 1-.5 0v-1.5a.25.25 0 1 1 .5 0M4.5 1.938a.25.25 0 0 1 .342.091l.75 1.3a.25.25 0 0 1-.434.25l-.75-1.3a.25.25 0 0 1 .092-.341m6 10.392a.25.25 0 0 1 .341.092l.75 1.299a.25.25 0 1 1-.432.25l-.75-1.3a.25.25 0 0 1 .091-.34ZM2.28 4.408l1.298.75a.25.25 0 0 1-.25.434l-1.299-.75a.25.25 0 0 1 .25-.434Zm10.392 6 1.299.75a.25.25 0 1 1-.25.434l-1.3-.75a.25.25 0 0 1 .25-.434ZM1 8a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 0 .5h-1.5A.25.25 0 0 1 1 8m12 0a.25.25 0 0 1 .25-.25h1.5a.25.25 0 1 1 0 .5h-1.5A.25.25 0 0 1 13 8M2.03 11.159l1.298-.75a.25.25 0 0 1 .25.432l-1.299.75a.25.25 0 0 1-.25-.432Zm10.392-6 1.299-.75a.25.25 0 1 1 .25.433l-1.3.75a.25.25 0 0 1-.25-.434ZM4.5 14.061a.25.25 0 0 1-.092-.341l.75-1.3a.25.25 0 0 1 .434.25l-.75 1.3a.25.25 0 0 1-.342.091m6-10.392a.25.25 0 0 1-.091-.342l.75-1.299a.25.25 0 1 1 .432.25l-.75 1.3a.25.25 0 0 1-.341.09ZM6.494 1.415l.13.483a.25.25 0 1 1-.483.13l-.13-.483a.25.25 0 0 1 .483-.13M9.86 13.972l.13.483a.25.25 0 1 1-.483.13l-.13-.483a.25.25 0 0 1 .483-.13M3.05 3.05a.25.25 0 0 1 .354 0l.353.354a.25.25 0 0 1-.353.353l-.354-.353a.25.25 0 0 1 0-.354m9.193 9.193a.25.25 0 0 1 .353 0l.354.353a.25.25 0 1 1-.354.354l-.353-.354a.25.25 0 0 1 0-.353M1.545 6.01l.483.13a.25.25 0 1 1-.13.483l-.483-.13a.25.25 0 1 1 .13-.482Zm12.557 3.365.483.13a.25.25 0 1 1-.13.483l-.483-.13a.25.25 0 1 1 .13-.483m-12.863.436a.25.25 0 0 1 .176-.306l.483-.13a.25.25 0 1 1 .13.483l-.483.13a.25.25 0 0 1-.306-.177m12.557-3.365a.25.25 0 0 1 .176-.306l.483-.13a.25.25 0 1 1 .13.483l-.483.13a.25.25 0 0 1-.306-.177M3.045 12.944a.3.3 0 0 1-.029-.376l3.898-5.592a.3.3 0 0 1 .062-.062l5.602-3.884a.278.278 0 0 1 .392.392L9.086 9.024a.3.3 0 0 1-.062.062l-5.592 3.898a.3.3 0 0 1-.382-.034zm3.143 1.817a.25.25 0 0 1-.176-.306l.129-.483a.25.25 0 0 1 .483.13l-.13.483a.25.25 0 0 1-.306.176M9.553 2.204a.25.25 0 0 1-.177-.306l.13-.483a.25.25 0 1 1 .483.13l-.13.483a.25.25 0 0 1-.306.176"/>
+            </svg>
+
+            <svg class="icon mr-3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+            </svg>
+
+            <svg class="icon mr-5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+            </svg>
+        </div> 
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 ">
+                <div class="row">
+                    <div class="col-6 bg-light d-flex flex-wrap mt-5 border border ">
+                        <div class="col-2 p-1 "><img src="images/RSYH1378.JPG" alt="..." class="img-thumbnail w-50 rounded-circle border border-danger mt-2"></div>
+                        <div class="col-2 p-1 "><img src="images/SDDF3461.JPG" alt="..." class="img-thumbnail w-50 rounded-circle border border-danger mt-2"></div>
+                        <div class="col-2 p-1 "><img src="images/UKHT9677.JPG" alt="..." class="img-thumbnail w-50 rounded-circle border border-danger mt-2"></div>
+                        <div class="col-2 p-1 "><img src="images/VUQV1065.JPG" alt="..." class="img-thumbnail w-50 rounded-circle border border-danger mt-2"></div>
+                        <div class="col-2 p-1 "><img src="images/SDDF3461.JPG" alt="..." class="img-thumbnail w-50 rounded-circle border border-danger mt-2"></div>
+                        <div class="col-2 p-1 "><img src="images/VYNE1238.JPG" alt="..." class="img-thumbnail w-50 rounded-circle border border-danger mt-2"></div>
+        
+                        <div class="col-2 p-1 "><p style="font-size: 12px;"><b>Kodluyoruz</b></p></div>
+                        <div class="col-2 p-1 "><p style="font-size: 12px;"><b>Mercan_shn</b></p></div>
+                        <div class="col-2 p-1 "><p style="font-size: 12px;"><b>Derya_Yildiz</b></p></div>
+                        <div class="col-2 p-1 "><p style="font-size: 12px;"><b>Lale_Can</b></p></div>
+                        <div class="col-2 p-1 "><p style="font-size: 12px;"><b>Demir_cnm</b></p></div>
+                        <div class="col-2 p-1 "><p style="font-size: 12px;"><b>Eda_Srn</b></p></div>
+                    </div>                    
+                </div>
+        
+                <div class="row">
+                    <div class="col-6 d-flex align-items-center mt-3 border bg-light">
+                        <div class="col-2 d-flex align-items-center p-1">
+                            <img style="width: 55px;" src="images/VAGY6273.JPG" alt="" class="rounded-circle">
+                        </div>                
+                        <div class="col-4 d-flex align-items-center p-1">
+                            <p class="mb-0"><b>Beyza Sakarya</b></p>
+                        </div>
+                        <div class="col d-flex justify-content-end p-1">
+                            <svg class="icon mr-3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="col-6 mt-1 border bg-light">
+                        <div>
+                            <img class="img-fluid" src="https://picsum.photos/seed/picsum/550/400" alt="">
+                        </div>
+                    </div>
+                    <div class="col-3 mt-5 border ml-5 bg-light">
+                        <div class=" row d-flex align-items-center ml-3">
+                            <div class="col-2 p-1">
+                                <img src="images/UKHT9677.JPG" alt="..." class="img-thumbnail w-90 rounded-circle border border-danger mt-2">
+                            </div>
+                            <div class="col-10 p-1">
+                                <p class="mb-0"><b>Beyza Sakarya</b></p>
+                            </div>
+                        </div>
+
+                        <div class="row d-flex align-items-center ml-3">
+                            <div class="col-6 p-1">
+                                <p style="color: gray; font-size: 10px;">Senin İçin Önerilenler</p>
+                            </div>
+                            <div class="col- p-1">
+                                <p style="font-size: 10px;"><b>Tümünü Gör</b></p>
+                            </div>
+                        </div>
+
+                        <div class=" row d-flex align-items-center ml-3">
+                            <div class="col-3 p-1 ">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf14pFbZH0cI__v9etQfDmoDC-4i8MSA-cVQ&s" alt="..." class="img-thumbnail w-75 rounded-circle border border-danger mt-2">
+                            </div>
+                            <div class="col-6 p-1 ">
+                                <p style="font-size: 11px;" class="mb-0 "><b>Kablosuz_Beyin</b></p>
+                            </div>
+                            <div class="col-3 p-1 ">
+                                <p style="font-size: 11px; color: rgb(80, 120, 174);" class="mb-0 "><b>Takip Et</b></p>
+                            </div>
+                        </div>
+
+                        <div class=" row d-flex align-items-center ml-3">
+                            <div class="col-3 p-1 ">
+                                <img src="data:image/png;base64,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" alt="..." class="img-thumbnail w-75 rounded-circle border border-danger mt-2">
+                            </div>
+                            <div class="col-6 p-1 ">
+                                <p style="font-size: 11px;" class="mb-0 "><b>Kodluyoruz</b></p>
+                            </div>
+                            <div class="col-3 p-1 ">
+                                <p style="font-size: 11px; color: rgb(80, 120, 174);" class="mb-0 "><b>Takip Et</b></p>
+                            </div>
+                        </div>
+
+                        <div class=" row d-flex align-items-center ml-3">
+                            <div class="col-3 p-1 ">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiCqx-yPmCBIrqFLVV8io2ZkZNxvxmmrWu3A&s" alt="..." class="img-thumbnail w-75 rounded-circle border border-danger mt-2">
+                            </div>
+                            <div class="col-6 p-1 ">
+                                <p style="font-size: 11px;" class="mb-0 "><b>Microfon</b></p>
+                            </div>
+                            <div class="col-3 p-1 ">
+                                <p style="font-size: 11px; color: rgb(80, 120, 174);" class="mb-0 "><b>Takip Et</b></p>
+                            </div>
+                        </div>
+
+                        <div class=" row d-flex align-items-center ml-3">
+                            <div class="col-3 p-1 ">
+                                <img src="data:image/png;base64,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" alt="..." class="img-thumbnail w-75 rounded-circle border border-danger mt-2">
+                            </div>
+                            <div class="col-6 p-1 ">
+                                <p style="font-size: 11px;" class="mb-0 "><b>Tech_Istanbul</b></p>
+                            </div>
+                            <div class="col-3 p-1 ">
+                                <p style="font-size: 11px; color: rgb(80, 120, 174);" class="mb-0 "><b>Takip Et</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="col-6 border bg-light">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <div class="d-flex align-items-center ">
+                                <div class="ml-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                        
+                                <div class="ml-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 16">
+                                        <path d="M2.678 11.894a1 1 0 0 1 .287.801 11 11 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8 8 0 0 0 8 14c3.996 0 7-2.807 7-6s-3.004-6-7-6-7 2.808-7 6c0 1.468.617 2.83 1.678 3.894m-.493 3.905a22 22 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a10 10 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105"/>
+                                    </svg>
+                                </div>
+                        
+                                <div class="ml-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        
+                            <div class="mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M3.5 10a.5.5 0 0 1-.5-.5v-8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 0 0 1h2A1.5 1.5 0 0 0 14 9.5v-8A1.5 1.5 0 0 0 12.5 0h-9A1.5 1.5 0 0 0 2 1.5v8A1.5 1.5 0 0 0 3.5 11h2a.5.5 0 0 0 0-1z"/>
+                                    <path fill-rule="evenodd" d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="col-6 border bg-light">
+                        <div style="font-size: 14px;">
+                            <p><b> Ali_Ersoy ve 45 kişi </b>beğendi.</p>
+                            <p><b>Mert_Yigit</b> Harika bir manzara!</p>
+                            <p><b>YesimErguc</b> Muazzam!</p>
+                            <p><b>GulDemir</b> Bayıldımm!</p>
+                            <p><b>GozdeBir</b> Burası da neresi?</p>
+                            <p style="color: gray;">10 SAAT ÖNCE</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="row">
+                    <div class="col-6 d-flex align-items-center mt-5 border bg-light">
+                        <div class="col-2 d-flex align-items-center p-1">
+                            <img style="width: 55px;" src="images/IMG_0264 - Kopya.JPG" alt="" class="rounded-circle">
+                        </div>                
+                        <div class="col-4 d-flex align-items-center p-1">
+                            <p class="mb-0"><b>Nida_Deniz</b></p>
+                        </div>
+                        <div class="col d-flex justify-content-end p-1">
+                            <svg class="icon mr-3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 mt-1 border bg-light">
+                        <div>
+                            <img class="img-fluid" src="https://picsum.photos/id/37/550/400" alt="">
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="col-6 border bg-light">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <div class="d-flex align-items-center ">
+                                <div class="ml-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                        
+                                <div class="ml-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 16">
+                                        <path d="M2.678 11.894a1 1 0 0 1 .287.801 11 11 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8 8 0 0 0 8 14c3.996 0 7-2.807 7-6s-3.004-6-7-6-7 2.808-7 6c0 1.468.617 2.83 1.678 3.894m-.493 3.905a22 22 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a10 10 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105"/>
+                                    </svg>
+                                </div>
+                        
+                                <div class="ml-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        
+                            <div class="mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M3.5 10a.5.5 0 0 1-.5-.5v-8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 0 0 1h2A1.5 1.5 0 0 0 14 9.5v-8A1.5 1.5 0 0 0 12.5 0h-9A1.5 1.5 0 0 0 2 1.5v8A1.5 1.5 0 0 0 3.5 11h2a.5.5 0 0 0 0-1z"/>
+                                    <path fill-rule="evenodd" d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="col-6 border bg-light">
+                        <div style="font-size: 14px;">
+                            <p><b> Mercan_Shn ve 50 kişi </b>beğendi.</p>
+                            <p><b>Zeynep_Sol</b> Manzaraya bayıldım!</p>
+                            <p><b>YesimErguc</b> Efsane!</p>
+                            <p><b>Emine_Sarıkaya</b> Bayıldımm!</p>
+                            <p><b>Samet_Can</b> Kesinlikle ben de gelmeliyim.</p>
+                            <p style="color: gray;">14 SAAT ÖNCE</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="row">
+                    <div class="col-6 d-flex align-items-center mt-5 border bg-light">
+                        <div class="col-2 d-flex align-items-center p-1">
+                            <img style="width: 55px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDTP0BZ-2COWDsqf9JyIGjOftNsM-1fUMpfg&s" alt="" class="rounded-circle">
+                        </div>                
+                        <div class="col-4 d-flex align-items-center p-1">
+                            <p class="mb-0"><b>Kodluyoruz</b></p>
+                        </div>
+                        <div class="col d-flex justify-content-end p-1">
+                            <svg class="icon mr-3" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6 mt-1 border bg-light">
+                        <div>
+                            <img class="img-fluid" src="https://binyaprak.com/images/blog_articles/1706/Kodluyoruz_Turuncu_logo_Yatay_YAZI-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="col-6 border bg-light">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <div class="d-flex align-items-center ">
+                                <div class="ml-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                                    </svg>
+                                </div>
+                        
+                                <div class="ml-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat" viewBox="0 0 16 16">
+                                        <path d="M2.678 11.894a1 1 0 0 1 .287.801 11 11 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8 8 0 0 0 8 14c3.996 0 7-2.807 7-6s-3.004-6-7-6-7 2.808-7 6c0 1.468.617 2.83 1.678 3.894m-.493 3.905a22 22 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a10 10 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105"/>
+                                    </svg>
+                                </div>
+                        
+                                <div class="ml-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        
+                            <div class="mr-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M3.5 10a.5.5 0 0 1-.5-.5v-8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 0 0 1h2A1.5 1.5 0 0 0 14 9.5v-8A1.5 1.5 0 0 0 12.5 0h-9A1.5 1.5 0 0 0 2 1.5v8A1.5 1.5 0 0 0 3.5 11h2a.5.5 0 0 0 0-1z"/>
+                                    <path fill-rule="evenodd" d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="col-6 border bg-light">
+                        <div style="font-size: 14px;">
+                            <p><b> Semih_Bir ve 25 kişi </b>beğendi.</p>
+                            <p><b>Akif_Dmr</b> Mükemmel!</p>
+                            <p><b>YesimErguc</b> Efsane!</p>
+                            <p><b>Elif_Bilgic</b> Bayıldımm!</p>
+                            <p><b>Samet_Can</b>İyi Eğlenceler!</p>
+                            <p style="color: gray;">16 SAAT ÖNCE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+    
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
